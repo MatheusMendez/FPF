@@ -17,6 +17,9 @@ class TestTriangle(unittest.TestCase):
     
     def test_bigger(self):
         self.assertNotIn(triangle(8,8,16),['Isósceles','Equilátero','Escaleno'])
+    
+    def test_negative(self):
+        self.assertNotIn(triangle(-3,4,5),['Isósceles','Equilátero','Escaleno'])
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)
